@@ -1,5 +1,11 @@
-require "elasticrecord/version"
+require 'elasticrecord/version'
 
-module Elasticrecord
-  # Your code goes here...
+module ElasticRecord
+  class Base
+
+
+    def valid?
+      return true
+    end
+  end
 end

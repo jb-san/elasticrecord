@@ -9,9 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jonathan Borg"]
   spec.email         = ["jonathan@x3m.io"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Simple integration with elasticsearch}
+  spec.homepage      = "https://github.com/jb-san/elasticrecord"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
@@ -27,6 +26,9 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  # Dependencies
+  # spec.add_runtime_dependency "daemons", "= 1.1.0"
+  spec.add_development_dependency "minitest", "~> 4.7.3"
   spec.add_development_dependency "bundler", "~> 1.9"
   spec.add_development_dependency "rake", "~> 10.0"
 end
